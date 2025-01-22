@@ -35,7 +35,7 @@ def get_posts(session: SessionDep,
               ):
 
     #posts = session.exec(select(Post).where(col(Post.title).contains(search)).offset(skip).limit(limit)).all()
-    statement  = select(
+    statement = select(
         Post,
         func.count(Vote.post_id).label("votes"),
     ).where(col(Post.title).contains(search))

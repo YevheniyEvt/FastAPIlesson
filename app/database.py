@@ -5,6 +5,7 @@ from typing import Annotated
 
 from .config import settings
 
+
 url = URL.create(
     "postgresql",
     username=settings.database_username,
@@ -14,7 +15,7 @@ url = URL.create(
     database=settings.database_name,
 )
 
-engine = create_engine(url, echo=True)
+engine = create_engine(url, echo=False)
 
 
 def get_session():
@@ -26,4 +27,7 @@ SessionDep = Annotated[Session, Depends(get_session)]
 
 def create_db_and_tables():
     SQLModel.metadata.create_all(engine)
+
+
+
 

@@ -28,7 +28,7 @@ def vote(vote: VotePublic, session: SessionDep,
     if vote.dir == 1:
         if found_vote:
             raise HTTPException(status_code=status.HTTP_409_CONFLICT,
-                                detail=f"user {current_user.id} has already vted post {vote.post_id}")
+                                detail=f"user {current_user.id} has already voted post {vote.post_id}")
         new_vote = Vote(post_id = vote.post_id, user_id=current_user.id)
         db_vote = Vote.model_validate(new_vote)
         session.add(db_vote)

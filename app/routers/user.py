@@ -28,6 +28,7 @@ def check_user_in_db(id: int, session: SessionDep):
                             detail=f"user with id: {id} does not exist")
     return id
 
+
 @router.post('/', status_code=status.HTTP_201_CREATED, response_model=UserPublic )
 def create_user(user: Annotated[UserCreate, Depends(check_user_not_in_db)], session: SessionDep):
 

@@ -2,19 +2,18 @@ from fastapi import FastAPI
 from contextlib import asynccontextmanager
 from fastapi.middleware.cors import CORSMiddleware
 
+
 from .routers import post, user, auth, vote
-from .database import create_db_and_tables
+from app.database import create_db_and_tables
 
 create = 0
-
-
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     if create:
         create_db_and_tables()
     yield
 
-app = FastAPI(lifespan=lifespan)
+app = FastAPI()
 
 origins = ["http://localhost",
            "http://localhost:8080",
