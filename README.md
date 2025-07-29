@@ -12,16 +12,14 @@
         <li><a href="#run-locally">Run Locally</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
+
+
 ## About The Project
+
+<img width="809" height="560" alt="image" src="https://github.com/user-attachments/assets/be909db3-24a5-4381-86a3-9e0230967e39" />
 
 Planning and managing your tasks is the key to success.
 This project helps you achieve your goals more efficiently by providing a simple, structured way to stay on track.
@@ -66,3 +64,4 @@ Finally, run the Django development server:
    ```
 You should then be able to open your browser on http://localhost:8000 and see a page with links to sign in or sign up.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
