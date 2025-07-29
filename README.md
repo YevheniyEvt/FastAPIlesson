@@ -64,5 +64,5 @@ Finally, run the Django development server:
    ```sh
    python manage.py runserver
    ```
-
+You should then be able to open your browser on http://localhost:8000 and see a page with links to sign in or sign up.
 
