@@ -19,7 +19,7 @@
 
 ## About The Project
 
-<img width="809" height="560" alt="image" src="https://github.com/user-attachments/assets/be909db3-24a5-4381-86a3-9e0230967e39" />
+<img width="830" height="480" alt="image" src="https://github.com/user-attachments/assets/1428f6d1-c5d3-436b-af7f-bf71791329f9" />
 
 Planning and managing your tasks is the key to success.
 This project helps you achieve your goals more efficiently by providing a simple, structured way to stay on track.
@@ -38,11 +38,11 @@ No distractions, no unnecessary features—just clear, focused task planning and
    docker-compose up
    ```
 
-You should then be able to open your browser on http://localhost:8000 and see a page with links to sign in or sign up.
+You should then be able to open your browser on http://localhost:8000 and see sign in page.
 
 ### Run Locally
 
-Assuming you use virtualenv, follow these steps to download and run the django-allauth example application in this directory:
+Assuming you use virtualenv, follow these steps to download and run the application in this directory:
 
    ```sh
    git clone git@github.com:YevheniyEvt/task_app.git
@@ -57,11 +57,13 @@ Now we need to create the database tables and an admin user. Run the following a
    python manage.py migrate
    python manage.py createsuperuser
    ```
+
 Finally, run the Django development server:
 
    ```sh
    python manage.py runserver
    ```
-You should then be able to open your browser on http://localhost:8000 and see a page with links to sign in or sign up.
+
+You should then be able to open your browser on http://localhost:8000 and see sign in page.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
